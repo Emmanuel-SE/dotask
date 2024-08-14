@@ -21,43 +21,43 @@
   <body class="h-full">
   ```
 -->
-    <div>
+    <div class="text-[#a6adbb]">
         <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-        <div class="relative z-50 lg:hidden" role="dialog" aria-modal="true">
-            <!--
-      Off-canvas menu backdrop, show/hide based on off-canvas menu state.
+        <div class="relative z-50 lg:hidden " role="dialog" aria-modal="true">
+                        <!--
+                Off-canvas menu backdrop, show/hide based on off-canvas menu state.
 
-      Entering: "transition-opacity ease-linear duration-300"
-        From: "opacity-0"
-        To: "opacity-100"
-      Leaving: "transition-opacity ease-linear duration-300"
-        From: "opacity-100"
-        To: "opacity-0"
-    -->
-            <div class="fixed inset-0 bg-gray-900/80" aria-hidden="true"></div>
+                Entering: "transition-opacity ease-linear duration-300"
+                    From: "opacity-0"
+                    To: "opacity-100"
+                Leaving: "transition-opacity ease-linear duration-300"
+                    From: "opacity-100"
+                    To: "opacity-0"
+                -->
+            <div class="fixed inset-0 bg-gray-900/80 opacity-10" aria-hidden="true"></div>
 
             <div class="fixed inset-0 flex">
-                <!--
-        Off-canvas menu, show/hide based on off-canvas menu state.
+                            <!--
+                    Off-canvas menu, show/hide based on off-canvas menu state.
 
-        Entering: "transition ease-in-out duration-300 transform"
-          From: "-translate-x-full"
-          To: "translate-x-0"
-        Leaving: "transition ease-in-out duration-300 transform"
-          From: "translate-x-0"
-          To: "-translate-x-full"
-      -->
+                    Entering: "transition ease-in-out duration-300 transform"
+                    From: "-translate-x-full"
+                    To: "translate-x-0"
+                    Leaving: "transition ease-in-out duration-300 transform"
+                    From: "translate-x-0"
+                    To: "-translate-x-full"
+                -->
                 <div class="relative mr-16 flex w-full max-w-xs flex-1">
-                    <!--
-          Close button, show/hide based on off-canvas menu state.
+                                    <!--
+                        Close button, show/hide based on off-canvas menu state.
 
-          Entering: "ease-in-out duration-300"
-            From: "opacity-0"
-            To: "opacity-100"
-          Leaving: "ease-in-out duration-300"
-            From: "opacity-100"
-            To: "opacity-0"
-        -->
+                        Entering: "ease-in-out duration-300"
+                            From: "opacity-0"
+                            To: "opacity-100"
+                        Leaving: "ease-in-out duration-300"
+                            From: "opacity-100"
+                            To: "opacity-0"
+                        -->
                     <div class="absolute left-full top-0 flex w-16 justify-center pt-5">
                         <button type="button" class="-m-2.5 p-2.5">
                             <span class="sr-only">Close sidebar</span>
@@ -69,21 +69,21 @@
                     </div>
 
                     <!-- Sidebar component, swap this element with another sidebar if you like -->
-                    <div class="flex grow flex-col gap-y-5 overflow-y-auto bg-[#1d232a] px-6 pb-4">
+                    <div class="flex grow flex-col  overflow-y-auto bg-[#1d232a] px-6 pb-4">
                         <div class="flex h-16 shrink-0 items-center">
-                            <img class="h-8 w-auto"
+                            {{-- <img class="h-8 w-auto"
                                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                alt="Your Company">
+                                alt="Your Company"> --}}
                         </div>
                         <nav class="flex flex-1 flex-col">
                             <ul role="list" class="flex flex-1 flex-col gap-y-7">
                                 <li>
                                     <ul role="list" class="-mx-2 space-y-1">
                                         <li>
-                                            <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:bg-[#a6adbb]" -->
+                                            <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-[#a6adbb] hover:bg-[#2b343e]" -->
                                             <a href="#"
-                                                class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
-                                                <svg class="h-6 w-6 shrink-0 hover:text-gray-700" fill="none"
+                                                class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
+                                                <svg class="h-6 w-6 shrink-0 hover:text-[#a6adbb]" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                     aria-hidden="true">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -94,8 +94,8 @@
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
-                                                <svg class="h-6 w-6 shrink-0 text-[#a6adbb] hover:text-gray-700"
+                                                class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
+                                                <svg class="h-6 w-6 shrink-0 text-[#a6adbb] hover:text-[#a6adbb]"
                                                     fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                                     stroke="currentColor" aria-hidden="true">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -106,8 +106,8 @@
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
-                                                <svg class="h-6 w-6 shrink-0 text-[#a6adbb] hover:text-gray-700"
+                                                class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
+                                                <svg class="h-6 w-6 shrink-0 text-[#a6adbb] hover:text-[#a6adbb]"
                                                     fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                                     stroke="currentColor" aria-hidden="true">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -118,7 +118,7 @@
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                                class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                                 <svg class="h-6 w-6 shrink-0 text-[#a6adbb] group" fill="none"
                                                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                                     aria-hidden="true">
@@ -130,8 +130,8 @@
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
-                                                <svg class="h-6 w-6 shrink-0 text-[#a6adbb] hover:text-gray-700 group"
+                                                class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
+                                                <svg class="h-6 w-6 shrink-0 text-[#a6adbb] hover:text-[#a6adbb] group"
                                                     fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                                     stroke="currentColor" aria-hidden="true">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -142,8 +142,8 @@
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
-                                                <svg class="h-6 w-6 shrink-0 text-[#a6adbb] hover:text-gray-700"
+                                                class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
+                                                <svg class="h-6 w-6 shrink-0 text-[#a6adbb] hover:text-[#a6adbb]"
                                                     fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                                     stroke="currentColor" aria-hidden="true">
                                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -160,27 +160,27 @@
                                     <div class="text-xs font-semibold leading-6 text-[#a6adbb]">Your teams</div>
                                     <ul role="list" class="-mx-2 mt-2 space-y-1">
                                         <li>
-                                            <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:bg-[#a6adbb]" -->
+                                            <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-[#a6adbb] hover:bg-[#2b343e]" -->
                                             <a href="#"
-                                                class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                                class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                                 <span
-                                                    class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb] group-hover:border-indigo-600 group">H</span>
+                                                    class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb]">H</span>
                                                 <span class="truncate">Heroicons</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                                class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                                 <span
-                                                    class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb] group-hover:border-indigo-600 group">T</span>
+                                                    class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb] ">T</span>
                                                 <span class="truncate">Tailwind Labs</span>
                                             </a>
                                         </li>
                                         <li>
                                             <a href="#"
-                                                class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                                class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                                 <span
-                                                    class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb] group-hover:border-indigo-600 group">W</span>
+                                                    class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb]">W</span>
                                                 <span class="truncate">Workcation</span>
                                             </a>
                                         </li>
@@ -188,7 +188,7 @@
                                 </li>
                                 <li class="mt-auto">
                                     <a href="#"
-                                        class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                        class="group -mx-2 flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                         <svg class="h-6 w-6 shrink-0 text-[#a6adbb] group" fill="none"
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                             aria-hidden="true">
@@ -210,20 +210,21 @@
         <!-- Static sidebar for desktop -->
         <div class="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
             <!-- Sidebar component, swap this element with another sidebar if you like -->
-            <div class="flex grow flex-col gap-y-5 overflow-y-auto border-r border-[#2c3542]  bg-[#1d232a] px-6 pb-4">
+            <div class="flex grow flex-col overflow-y-auto border-r border-[#2c3542]  bg-[#1d232a] px-6 pb-4">
                 <div class="flex h-16 shrink-0 items-center">
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt="Your Company">
+                    <h1 class="font-bold text-2xl text-[#D7FE62]">DOTASK</h1>
+                    {{-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                        alt="Your Company"> --}}
                 </div>
                 <nav class="flex flex-1 flex-col">
                     <ul role="list" class="flex flex-1 flex-col gap-y-7">
                         <li>
                             <ul role="list" class="-mx-2 space-y-1">
                                 <li>
-                                    <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:bg-[#a6adbb]" -->
+                                    <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-[#a6adbb] hover:bg-[#2b343e]" -->
                                     <a href="#"
-                                        class="group flex gap-x-3 rounded-md bg-gray-50 p-2 text-sm font-semibold leading-6 text-indigo-600">
-                                        <svg class="h-6 w-6 shrink-0 text-indigo-600" fill="none"
+                                        class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
+                                        <svg class="h-6 w-6 shrink-0 text-[#a6adbb] group" fill="none"
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                             aria-hidden="true">
                                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -234,7 +235,7 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                        class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                         <svg class="h-6 w-6 shrink-0 text-[#a6adbb] group" fill="none"
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                             aria-hidden="true">
@@ -246,7 +247,7 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                        class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                         <svg class="h-6 w-6 shrink-0 text-[#a6adbb] group" fill="none"
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                             aria-hidden="true">
@@ -258,7 +259,7 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                        class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                         <svg class="h-6 w-6 shrink-0 text-[#a6adbb] group" fill="none"
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                             aria-hidden="true">
@@ -270,7 +271,7 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                        class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                         <svg class="h-6 w-6 shrink-0 text-[#a6adbb] group" fill="none"
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                             aria-hidden="true">
@@ -282,7 +283,7 @@
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                        class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                         <svg class="h-6 w-6 shrink-0 text-[#a6adbb] group" fill="none"
                                             viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                                             aria-hidden="true">
@@ -300,27 +301,27 @@
                             <div class="text-xs font-semibold leading-6 text-[#a6adbb]">Your teams</div>
                             <ul role="list" class="-mx-2 mt-2 space-y-1">
                                 <li>
-                                    <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-gray-700 hover:bg-[#a6adbb]" -->
+                                    <!-- Current: "bg-gray-50 text-indigo-600", Default: "text-[#a6adbb] hover:bg-[#2b343e]" -->
                                     <a href="#"
-                                        class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                        class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                         <span
-                                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb] group-hover:border-indigo-600 group">H</span>
+                                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb]">H</span>
                                         <span class="truncate">Heroicons</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                        class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                         <span
-                                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb] group-hover:border-indigo-600 group">T</span>
+                                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb]">T</span>
                                         <span class="truncate">Tailwind Labs</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="group flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                        class="group flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                         <span
-                                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb] group-hover:border-indigo-600 group">W</span>
+                                            class="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-200 bg-[#1d232a] text-[0.625rem] font-medium text-[#a6adbb]">W</span>
                                         <span class="truncate">Workcation</span>
                                     </a>
                                 </li>
@@ -328,7 +329,7 @@
                         </li>
                         <li class="mt-auto">
                             <a href="#"
-                                class="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-700 hover:bg-[#a6adbb]">
+                                class="group -mx-2 flex gap-x-3 rounded-md p-2 font-semibold leading-6 text-[#a6adbb] hover:bg-[#2b343e]">
                                 <svg class="h-6 w-6 shrink-0 text-[#a6adbb] group" fill="none" viewBox="0 0 24 24"
                                     stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -344,10 +345,38 @@
             </div>
         </div>
 
-        <div class="lg:pl-72">
-            <main class="py-10">
-                <div class="px-4 sm:px-6 lg:px-8">
-                    <!-- Your content -->
+        <div class="lg:pl-72 min-h-screen">
+            <main class="p-16 w-full min-h-screen flex flex-col items-center relative">
+                <nav class="px-4 sm:px-6 lg:px-8 w-full flex justify-between mb-12">
+                    <div class="flex flex-col p-2 ">
+                        <h1 class="text-2xl font-bold">
+                            Good Morning, Emmanuel!👋🏽
+                        </h1>
+                        <span>Today,</span>
+                    </div>
+                    <div class="bg-gray-50 opacity-5">
+                        <div>
+                            Today
+                        </div>
+                    </div>
+                </nav>
+                <div class="px-4 sm:px-6 lg:px-8 w-full gap-2 flex flex-col">
+                    @foreach (range(1, 6) as $n)
+                        <div
+                            class="relative p-8 bg-[#b1c281] bg-opacity-5 overflow-hidden rounded-xl shadow-lg  ">
+
+                        </div>
+                    @endforeach
+
+                </div>
+                <div class=" absolute bottom-16 px-4 left-20 lg:w-1/5">
+                    <div class="flex w-full bg-[#D7FE62] text-[#1d232a] rounded-full font-bold text-lg p-4 justify-between">
+                        <span>Create New Task</span>
+                        <div class="flex gap-1 ">
+                            <span class="font-bold rounded-full bg-[#b1c281] bg-opacity-50 h-6 w-6 pl-1">⌘</span>
+                            <span class="font-bold rounded-full bg-[#b1c281] bg-opacity-50 h-6 w-6 pl-1.5">N</span>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
