@@ -348,7 +348,7 @@
         <div class="lg:pl-72 min-h-screen">
             <main class="p-16 w-full min-h-screen flex flex-col items-center relative">
                 <nav class="px-4 sm:px-6 lg:px-8 w-full flex justify-between mb-12">
-                    <div class="flex flex-col p-2 ">
+                    <div class="flex flex-col">
                         <h1 class="text-2xl font-bold">
                             Good Morning, Emmanuel!👋🏽
                         </h1>
