@@ -369,8 +369,8 @@
                     @endforeach
 
                 </div>
-                <div class=" absolute bottom-16 px-4 left-20 lg:w-1/5">
-                    <div class="flex w-full bg-[#D7FE62] text-[#1d232a] rounded-full font-bold text-lg p-4 justify-between">
+                <div class=" absolute bottom-16 px-4 left-20 lg:w-1/5 shrink-0">
+                    <div class="shrink-0 w-full bg-[#D7FE62] text-[#1d232a] rounded-full font-bold text-lg p-4 justify-between">
                         <span>Create New Task</span>
                         <div class="flex gap-1 ">
                             <span class="font-bold rounded-full bg-[#b1c281] bg-opacity-50 h-6 w-6 pl-1">⌘</span>
