@@ -1,30 +1,6 @@
-<x-app-layout>
-    <!--
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
-    <!--
-  This example requires updating your template:
-
-  ```
-  <html class="h-full bg-[#1d232a]">
-  <body class="h-full">
-  ```
--->
-    <div class="text-[#a6adbb]">
         <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
         <div class="relative z-50 lg:hidden " role="dialog" aria-modal="true">
-                        <!--
+            <!--
                 Off-canvas menu backdrop, show/hide based on off-canvas menu state.
 
                 Entering: "transition-opacity ease-linear duration-300"
@@ -37,7 +13,7 @@
             <div class="fixed inset-0 bg-gray-900/80 opacity-10" aria-hidden="true"></div>
 
             <div class="fixed inset-0 flex">
-                            <!--
+                <!--
                     Off-canvas menu, show/hide based on off-canvas menu state.
 
                     Entering: "transition ease-in-out duration-300 transform"
@@ -48,7 +24,7 @@
                     To: "-translate-x-full"
                 -->
                 <div class="relative mr-16 flex w-full max-w-xs flex-1">
-                                    <!--
+                    <!--
                         Close button, show/hide based on off-canvas menu state.
 
                         Entering: "ease-in-out duration-300"
@@ -71,9 +47,7 @@
                     <!-- Sidebar component, swap this element with another sidebar if you like -->
                     <div class="flex grow flex-col  overflow-y-auto bg-[#1d232a] px-6 pb-4">
                         <div class="flex h-16 shrink-0 items-center">
-                            {{-- <img class="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                                alt="Your Company"> --}}
+                            <h1 class="font-bold text-2xl text-[#D7FE62]">DOTASK</h1>
                         </div>
                         <nav class="flex flex-1 flex-col">
                             <ul role="list" class="flex flex-1 flex-col gap-y-7">
@@ -213,8 +187,6 @@
             <div class="flex grow flex-col overflow-y-auto border-r border-[#2c3542]  bg-[#1d232a] px-6 pb-4">
                 <div class="flex h-16 shrink-0 items-center">
                     <h1 class="font-bold text-2xl text-[#D7FE62]">DOTASK</h1>
-                    {{-- <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt="Your Company"> --}}
                 </div>
                 <nav class="flex flex-1 flex-col">
                     <ul role="list" class="flex flex-1 flex-col gap-y-7">
@@ -344,41 +316,3 @@
                 </nav>
             </div>
         </div>
-
-        <div class="lg:pl-72 min-h-screen">
-            <main class="p-16 w-full min-h-screen flex flex-col items-center relative">
-                <nav class="px-4 sm:px-6 lg:px-8 w-full flex justify-between mb-12">
-                    <div class="flex flex-col">
-                        <h1 class="text-2xl font-bold">
-                            Good Morning, Emmanuel!👋🏽
-                        </h1>
-                        <span>Today,</span>
-                    </div>
-                    <div class="bg-gray-50 opacity-5">
-                        <div>
-                            Today
-                        </div>
-                    </div>
-                </nav>
-                <div class="px-4 sm:px-6 lg:px-8 w-full gap-2 flex flex-col">
-                    @foreach (range(1, 6) as $n)
-                        <div
-                            class="relative p-8 bg-[#b1c281] bg-opacity-5 overflow-hidden rounded-xl shadow-lg  ">
-
-                        </div>
-                    @endforeach
-
-                </div>
-                <div class=" absolute bottom-16 px-4 left-20 lg:w-1/5 shrink-0">
-                    <div class="shrink-0 w-full bg-[#D7FE62] text-[#1d232a] rounded-full font-bold text-lg p-4 justify-between">
-                        <span>Create New Task</span>
-                        <div class="flex gap-1 ">
-                            <span class="font-bold rounded-full bg-[#b1c281] bg-opacity-50 h-6 w-6 pl-1">⌘</span>
-                            <span class="font-bold rounded-full bg-[#b1c281] bg-opacity-50 h-6 w-6 pl-1.5">N</span>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </div>
-</x-app-layout>

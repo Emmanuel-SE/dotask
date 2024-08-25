@@ -11,9 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('user_project', function (Blueprint $table) {
-            $table->unsignedBigInteger('project_id')->references('id')->on('projects')->onDelete('cascade');
-            $table->unsignedBigInteger('user_id')->references('id')->on('users')->onDelete('cascade'); 
+        Schema::create('user_task', function (Blueprint $table) {
+            $table->unsignedBigInteger('task_id')->references('id')->on('tasks')->onDelete('cascade');
+            $table->unsignedBigInteger('user_id')->references('id')->on('users')->onDelete('cascade');
         });
     }
 
@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('user_project');
+        //
     }
 };
